@@ -31,6 +31,7 @@ curl --noproxy localhost --data "email=qwe&password=qwe&file=/home/alok/1.txt" h
 curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/view/BookPadSRS.pdf
 curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/delete/BookPadSRS.pdf
 curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/restore/temp.txt
+curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/rename/temp.txt/alpha.txt
 
 
 
