@@ -1,0 +1,31 @@
+dependencies - python packages: flask, flask_wtf, wtforms, pdfminer
+
+run db_create.py to setup the sqlite database
+
+curl --noproxy 127.0.0.1 --user admin@admin.com:secret http://127.0.0.1:5000/
+curl --noproxy 127.0.0.1 --user admin@admin.com:secret http://127.0.0.1:5000/success
+curl --noproxy localhost --data "email=admin@admin.com&password=secret" localhost:5000/register
+curl --noproxy localhost --data "email=qwe&password=qwe&file=/home/alok/1.txt" http://localhost:5000/upload_file
+
+
+
+WEB INTERFACE
+
+/register
+/login
+/web/upload
+/web/uploaded/<fname>
+/web/view/<fname>
+/web/list
+/web/delete/<fname>
+/web/edit/<fname>
+
+TERMINAL
+
+curl --noproxy localhost --data "email=qwe&password=qwe" http://localhost:5000/register
+curl --noproxy localhost --data "email=qwe&password=qwe" http://localhost:5000/login
+curl --noproxy localhost --data "email=qwe&password=qwe" http://localhost:5000/list_files
+curl --noproxy localhost --data "email=qwe&password=qwe&file=/home/alok/1.txt" http://localhost:5000/upload_file
+curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/view/BookPadSRS.pdf
+
+
