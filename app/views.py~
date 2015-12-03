@@ -302,7 +302,7 @@ def list_files() :
 			cursor = conn.execute(cmd)
 			out = ''
 			for row in cursor :
-				out += row[0] + '<br />'
+				out += row[0] + '\n'
 			conn.close()
 			return out
 		else :

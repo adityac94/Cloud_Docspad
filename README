@@ -19,6 +19,8 @@ WEB INTERFACE
 /web/list
 /web/delete/<fname>
 /web/edit/<fname>
+/web/restore/<fname>
+/web/rename/<oldfname>/<newfname>
 
 TERMINAL
 
@@ -27,5 +29,9 @@ curl --noproxy localhost --data "email=qwe&password=qwe" http://localhost:5000/l
 curl --noproxy localhost --data "email=qwe&password=qwe" http://localhost:5000/list_files
 curl --noproxy localhost --data "email=qwe&password=qwe&file=/home/alok/1.txt" http://localhost:5000/upload_file
 curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/view/BookPadSRS.pdf
+curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/delete/BookPadSRS.pdf
+curl --noproxy localhost --data "email=aditya&password=arkobabi" http://localhost:5000/restore/temp.txt
+
+
 
 
