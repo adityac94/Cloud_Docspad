@@ -1,6 +1,13 @@
+CLOUD MAJOR PROJECT - DOCSPAD
+
+#IIITHyderabad #CloudComputing #CSE565 #Monsoon16 #SIEL #Docspad #Bookpad #OnlineDocumentViewing #Flask #PythonWeb
+#HotTopic #RESTAPI
+
+
 dependencies - python packages: flask, flask_wtf, wtforms, pdfminer, fdpf
 
 run db_create.py to setup the sqlite database
+run run.py to start the flask web server
 
 curl --noproxy 127.0.0.1 --user admin@admin.com:secret http://127.0.0.1:5000/
 curl --noproxy 127.0.0.1 --user admin@admin.com:secret http://127.0.0.1:5000/success
@@ -22,7 +29,7 @@ WEB INTERFACE
 /web/restore/<fname>
 /web/rename/<oldfname>/<newfname>
 
-TERMINAL
+REST-API
 
 curl --noproxy localhost --data "email=qwe&password=qwe" http://localhost:5000/register
 curl --noproxy localhost --data "email=qwe&password=qwe" http://localhost:5000/login
